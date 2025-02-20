@@ -12,10 +12,13 @@
       "supportsTablet": true
     },
     "android": {
+      "usesCleartextTraffic": true,
+      "permissions": ["INTERNET"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tranquilgorge.BedroomlightController3"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +39,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2e5808a7-e33a-48f6-93f1-108048766cac"
+      }
     }
   }
 }
