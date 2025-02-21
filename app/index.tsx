@@ -222,9 +222,9 @@ const changeLight = (hue, sat, bri) => {
           <View style={styles.bri}>
             <Pressable style={[styles.buttonBri, styles.white, {backgroundColor: 'rgba(255,255,255, .55)'}]} onPress={() => briPressed(254)}>
             </Pressable>
-            <Pressable style={[styles.buttonBri, styles.white, {backgroundColor: 'rgba(255,255,255, .30)'}]} onPress={() => briPressed(254)}>
+            <Pressable style={[styles.buttonBri, styles.white, {backgroundColor: 'rgba(255,255,255, .30)'}]} onPress={() => briPressed(120)}>
             </Pressable>
-            <Pressable style={[styles.buttonBri, styles.white, {backgroundColor: 'rgba(255,255,255, .1)'}]} onPress={() => briPressed(254)}>
+            <Pressable style={[styles.buttonBri, styles.white, {backgroundColor: 'rgba(255,255,255, .1)'}]} onPress={() => briPressed(40)}>
             </Pressable>
             <Pressable style={[styles.buttonBri, styles.white, {backgroundColor: 'rgba(255,255,255, 0)'}]} onPress={() => briPressed(20)}>
             </Pressable>
@@ -265,7 +265,7 @@ const changeLight = (hue, sat, bri) => {
       
 
       <View style={styles.bottom}>
-       <Pressable style={styles.normalLight} onPress={() => changeLight(9700, 70, 130)}>
+       <Pressable style={styles.normalLight} onPress={() => changeLight(9500, 70, 130)}>
          <View>
             <Text style={[styles.textStroke, { top: -2, left: -2 }]}>Light</Text>
             <Text style={[styles.textStroke, { top: -2, left: 2 }]}>Light</Text>
